@@ -116,7 +116,7 @@ def propagate(w,b,X,Y):
 def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     """
     This function optimizes w and b by running a gradient descent algorithm
-
+    优化迭代
     Arguments:
     w -- weights, a numpy array of size (num_px * num_px * 3, 1)
     b -- bias, a scalar
@@ -154,7 +154,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
 def predict(w,b,X):
     '''
     Predict whether the label is 0 or 1 using learned logistic regression parameters (w, b)
-
+    拟合并验证test
     Arguments:
     w -- weights, a numpy array of size (num_px * num_px * 3, 1)
     b -- bias, a scalar
